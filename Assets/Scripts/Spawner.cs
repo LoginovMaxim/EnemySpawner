@@ -9,7 +9,7 @@ public class Spawner : MonoBehaviour
 
     private float _timer;
 
-    void Start()
+    private void Start()
     {
         _points = new Transform[transform.childCount];
 
@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
         _timer += Time.deltaTime;
 

@@ -8,7 +8,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _offset;
 
-    void Update()
+    private void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, _target.position, _speed * Time.deltaTime);
         transform.position = new Vector3(transform.position.x, transform.position.y, _offset);

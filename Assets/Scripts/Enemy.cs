@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private bool _isTrap;
 
-    void Update()
+    private void Update()
     {
         if(!_isTrap)
             transform.Translate(0, _speed * Time.deltaTime * (-1), 0);
